@@ -1,0 +1,92 @@
+body {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  margin: 0;
+}
+
+.page_display {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_display {
+  display: flex;
+}
+
+.footer_display {
+  text-align: center;
+  padding-top: 2vh;
+  font-style: italic;
+}
+
+.card_area {
+  width: 90%;
+}
+
+.card_wrapper {
+  display: flex;
+  height: 30vh;
+}
+
+.card {
+  padding-top: 8vh;
+  text-align: center;
+  width: 33%;
+  font-size: 12vh;
+  font-weight: normal;
+  color: aliceblue;
+}
+
+.button_wrapper {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+.btn_interaction {
+  background: #2B8EAD;
+  color: white;
+  font: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 10vh;
+  width: 8vw;
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 375px) {
+  .main_display {
+    flex-direction: column;
+  }
+  
+  .card {
+    padding-top: 4vh;
+    height: 12vh;
+    width: 100%;
+    font-size: 3vh;
+  }
+
+  .card_wrapper {
+    flex-direction: column;
+  }
+
+  .button_area {
+    display: none;
+  }
+  .btn_interaction {
+    width: 25vw;
+    height: 5vh;
+    font-size: 1.5vh;
+  }
+
+  .button_area_mobile {
+    display: flex;
+    justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 375px) {
+  .button_area_mobile {
+    display: none;
+  }
+
+}
+
